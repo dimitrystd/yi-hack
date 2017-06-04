@@ -1,8 +1,13 @@
+
+Changes
+=======
+* Allow to enable/disable of services. So now you can disable HTTP\FTP\RTSP\Motion detection if you don't need it
+
 ===============
 Yi-hack project
 ===============
 
-Forked from fritz-smh/yi-hack.
+Forked from death2all110/yi-hack.
 
 Purpose
 =======

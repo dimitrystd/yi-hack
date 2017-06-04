@@ -10,6 +10,13 @@ NETMASK=255.255.255.0
 GATEWAY=192.168.1.254
 NAMESERVER=192.168.1.254
 
+### Services
+# Enable/Disable services
+HTTP=yes
+FTP=no
+RTSP=yes
+RECORD=no
+
 ### Motion notifications
 # Optionally POST a JSON message of the status of motion detection to a URL
 # Values : URL to POST notification to, or leave empty to disable
@@ -36,11 +43,12 @@ LED_WHEN_READY=-boff -bon
 #   -Europe/London GMT0BST,M3.5.0/1,M10.5.0
 #   -Europe/Paris CET-1CEST,M3.5.0,M10.5.0/3
 #   -US/Central CST6CDT,M3.2.0,M11.1.0
-TIMEZONE=GMT0BST,M3.5.0/1,M10.5.0
+#   -Europe/Kiev EET-2EEST,M3.5.0/3,M10.5.0/4
+TIMEZONE=EET-2EEST,M3.5.0/3,M10.5.0/4
 
 ### NTP server
 #If you want to change your ntp server you can see a list here http://www.pool.ntp.org/zone/@
-NTP_SERVER=0.uk.pool.ntp.org
+NTP_SERVER=0.ua.pool.ntp.org
 
 ### Boot voice
 # If you want to disable the voice feedback during boot, change BOOT_VOICE to 'no'
@@ -51,7 +59,7 @@ BOOT_VOICE=yes
 ### Enable Cloud Features
 # No disables cloud features (Yi Home App) and cameras are accessible over local network only.
 # Values: yes|no
-CLOUD=yes
+CLOUD=no
 
 ### Debug
 # Debug mode, keep it to 'no' unless you known what you do
